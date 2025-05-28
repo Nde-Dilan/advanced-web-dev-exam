@@ -1,0 +1,315 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.5 Chrome/134.0.6998.205 Electron/35.3.0 Safari/537.36" version="27.0.5">
+  <diagram name="Event-Booking-Process" id="booking-process-flow">
+    <mxGraphModel dx="856" dy="561" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Actors/Participants -->
+        <mxCell id="actor-customer" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;" parent="1" vertex="1">
+          <mxGeometry x="80" y="40" width="30" height="700" as="geometry" />
+        </mxCell>
+        <mxCell id="customer-activation" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="actor-customer" vertex="1">
+          <mxGeometry x="10" y="40" width="10" height="620" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="web-app" value="Web&lt;div&gt;Application&lt;/div&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="220" y="40" width="100" height="700" as="geometry" />
+        </mxCell>
+        <mxCell id="web-app-activation" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="web-app" vertex="1">
+          <mxGeometry x="45" y="50" width="10" height="610" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="booking-controller" value="Booking&lt;div&gt;Controller&lt;/div&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="380" y="40" width="100" height="700" as="geometry" />
+        </mxCell>
+        <mxCell id="booking-controller-activation" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="booking-controller" vertex="1">
+          <mxGeometry x="45" y="140" width="10" height="450" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="database" value="Database" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="540" y="40" width="100" height="700" as="geometry" />
+        </mxCell>
+        <mxCell id="database-activation" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="database" vertex="1">
+          <mxGeometry x="45" y="220" width="10" height="180" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="payment-gateway" value="Payment&lt;div&gt;Gateway&lt;/div&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="720" y="40" width="100" height="700" as="geometry" />
+        </mxCell>
+        <mxCell id="payment-gateway-activation" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="payment-gateway" vertex="1">
+          <mxGeometry x="45" y="360" width="10" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="notification-service" value="Notification&lt;div&gt;Service&lt;/div&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="900" y="40" width="100" height="700" as="geometry" />
+        </mxCell>
+        <mxCell id="notification-service-activation" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="notification-service" vertex="1">
+          <mxGeometry x="45" y="500" width="10" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Labels -->
+        <mxCell id="customer-label" value="Customer" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="65" y="10" width="60" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Messages -->
+        <!-- 1. Customer browses services -->
+        <mxCell id="msg-browse-services" value="" style="endArrow=block;startArrow=none;endFill=1;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="100" y="90" as="sourcePoint" />
+            <mxPoint x="265" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-browse-services-label" value="Browse Available Services" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="msg-browse-services" vertex="1" connectable="0">
+          <mxGeometry x="-0.2381" y="3" relative="1" as="geometry">
+            <mxPoint x="23" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 2. Display services -->
+        <mxCell id="msg-display-services" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="265" y="110" as="sourcePoint" />
+            <mxPoint x="100" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-display-services-label" value="Display Services  Time Slots" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="msg-display-services" vertex="1" connectable="0">
+          <mxGeometry x="0.1895" y="-1" relative="1" as="geometry">
+            <mxPoint x="13" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 3. Customer selects service -->
+        <mxCell id="msg-select-service" value="" style="endArrow=block;startArrow=none;endFill=1;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="100" y="140" as="sourcePoint" />
+            <mxPoint x="265" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-select-service-label" value="Select Service  Time Slot" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="msg-select-service" vertex="1" connectable="0">
+          <mxGeometry x="-0.2381" y="3" relative="1" as="geometry">
+            <mxPoint x="23" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 4. Submit booking form -->
+        <mxCell id="msg-submit-booking" value="" style="endArrow=block;startArrow=none;endFill=1;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="100" y="170" as="sourcePoint" />
+            <mxPoint x="265" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-submit-booking-label" value="Submit Booking Form" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="msg-submit-booking" vertex="1" connectable="0">
+          <mxGeometry x="-0.2381" y="3" relative="1" as="geometry">
+            <mxPoint x="23" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 5. Forward to booking controller -->
+        <mxCell id="msg-forward-booking" value="" style="endArrow=block;startArrow=none;endFill=1;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="275" y="190" as="sourcePoint" />
+            <mxPoint x="425" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-forward-booking-label" value="Process Booking Request" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="msg-forward-booking" vertex="1" connectable="0">
+          <mxGeometry x="-0.2381" y="3" relative="1" as="geometry">
+            <mxPoint x="23" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 6. Validate booking data -->
+        <mxCell id="validate-booking" value="Validate Booking Data" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry x="-0.0476" y="10" relative="1" as="geometry">
+            <mxPoint x="435" y="210" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="465" y="210" />
+              <mxPoint x="465" y="240" />
+            </Array>
+            <mxPoint x="435" y="240" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 7. Check availability -->
+        <mxCell id="msg-check-availability" value="" style="endArrow=block;startArrow=none;endFill=1;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="435" y="270" as="sourcePoint" />
+            <mxPoint x="585" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-check-availability-label" value="Check Time Slot Availability" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="msg-check-availability" vertex="1" connectable="0">
+          <mxGeometry x="-0.2381" y="3" relative="1" as="geometry">
+            <mxPoint x="23" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 8. Return availability status -->
+        <mxCell id="msg-return-availability" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="585" y="300" as="sourcePoint" />
+            <mxPoint x="435" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-return-availability-label" value="Return Availability Status" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="msg-return-availability" vertex="1" connectable="0">
+          <mxGeometry x="0.1895" y="-1" relative="1" as="geometry">
+            <mxPoint x="13" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 9. Create booking record -->
+        <mxCell id="msg-create-booking" value="" style="endArrow=block;startArrow=none;endFill=1;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="435" y="330" as="sourcePoint" />
+            <mxPoint x="585" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-create-booking-label" value="Create Booking Record" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="msg-create-booking" vertex="1" connectable="0">
+          <mxGeometry x="-0.2381" y="3" relative="1" as="geometry">
+            <mxPoint x="23" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 10. Return booking ID -->
+        <mxCell id="msg-return-booking-id" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="585" y="360" as="sourcePoint" />
+            <mxPoint x="435" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-return-booking-id-label" value="Return Booking ID" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="msg-return-booking-id" vertex="1" connectable="0">
+          <mxGeometry x="0.1895" y="-1" relative="1" as="geometry">
+            <mxPoint x="13" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 11. Process payment -->
+        <mxCell id="msg-process-payment" value="" style="endArrow=block;startArrow=none;endFill=1;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="435" y="390" as="sourcePoint" />
+            <mxPoint x="765" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-process-payment-label" value="Process Payment" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="msg-process-payment" vertex="1" connectable="0">
+          <mxGeometry x="-0.2381" y="3" relative="1" as="geometry">
+            <mxPoint x="113" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 12. Payment result -->
+        <mxCell id="msg-payment-result" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="765" y="420" as="sourcePoint" />
+            <mxPoint x="435" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-payment-result-label" value="Payment Success/Failure" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="msg-payment-result" vertex="1" connectable="0">
+          <mxGeometry x="0.1895" y="-1" relative="1" as="geometry">
+            <mxPoint x="43" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Alternative frame for payment result -->
+        <mxCell id="alt-payment-frame" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;recursiveResize=0;container=1;collapsible=0;width=50;height=20;" parent="1" vertex="1">
+          <mxGeometry x="50" y="440" width="970" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="alt-payment-success-guard" value="[Payment Success]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="alt-payment-frame" vertex="1">
+          <mxGeometry x="50" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="alt-payment-divider" value="" style="line;strokeWidth=1;dashed=1;labelPosition=center;verticalLabelPosition=bottom;align=left;verticalAlign=top;spacingLeft=20;spacingTop=15;html=1;whiteSpace=wrap;" parent="alt-payment-frame" vertex="1">
+          <mxGeometry y="90" width="970" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="alt-payment-failure-guard" value="[Payment Failed]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="alt-payment-frame" vertex="1">
+          <mxGeometry x="50" y="90" width="100" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- 13a. Update booking status (success) -->
+        <mxCell id="msg-update-booking-success" value="" style="endArrow=block;startArrow=none;endFill=1;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="435" y="480" as="sourcePoint" />
+            <mxPoint x="585" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-update-booking-success-label" value="Update Booking (Confirmed)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="msg-update-booking-success" vertex="1" connectable="0">
+          <mxGeometry x="-0.2381" y="3" relative="1" as="geometry">
+            <mxPoint x="23" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 14a. Send confirmation notification -->
+        <mxCell id="msg-send-confirmation" value="" style="endArrow=block;startArrow=none;endFill=1;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="435" y="510" as="sourcePoint" />
+            <mxPoint x="945" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-send-confirmation-label" value="Send Confirmation Email/SMS" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="msg-send-confirmation" vertex="1" connectable="0">
+          <mxGeometry x="-0.2381" y="3" relative="1" as="geometry">
+            <mxPoint x="173" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 13b. Cancel booking (failure) -->
+        <mxCell id="msg-cancel-booking" value="" style="endArrow=block;startArrow=none;endFill=1;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="435" y="560" as="sourcePoint" />
+            <mxPoint x="585" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-cancel-booking-label" value="Cancel Booking" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="msg-cancel-booking" vertex="1" connectable="0">
+          <mxGeometry x="-0.2381" y="3" relative="1" as="geometry">
+            <mxPoint x="23" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 15. Return result to user -->
+        <mxCell id="msg-return-result" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="425" y="640" as="sourcePoint" />
+            <mxPoint x="275" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-return-result-label" value="Return Booking Result" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="msg-return-result" vertex="1" connectable="0">
+          <mxGeometry x="0.1895" y="-1" relative="1" as="geometry">
+            <mxPoint x="13" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 16. Display confirmation/error -->
+        <mxCell id="msg-display-confirmation" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="265" y="660" as="sourcePoint" />
+            <mxPoint x="100" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-display-confirmation-label" value="Display Confirmation/Error" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="msg-display-confirmation" vertex="1" connectable="0">
+          <mxGeometry x="0.1895" y="-1" relative="1" as="geometry">
+            <mxPoint x="13" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Destruction markers -->
+        <mxCell id="terminate-customer" value="" style="shape=umlDestroy;html=1;" parent="1" vertex="1">
+          <mxGeometry x="80" y="740" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="terminate-app" value="" style="shape=umlDestroy;html=1;" parent="1" vertex="1">
+          <mxGeometry x="255" y="740" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="terminate-booking" value="" style="shape=umlDestroy;html=1;" parent="1" vertex="1">
+          <mxGeometry x="415" y="740" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="terminate-database" value="" style="shape=umlDestroy;html=1;" parent="1" vertex="1">
+          <mxGeometry x="575" y="740" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="terminate-payment" value="" style="shape=umlDestroy;html=1;" parent="1" vertex="1">
+          <mxGeometry x="755" y="740" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="terminate-notification" value="" style="shape=umlDestroy;html=1;" parent="1" vertex="1">
+          <mxGeometry x="935" y="740" width="30" height="30" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

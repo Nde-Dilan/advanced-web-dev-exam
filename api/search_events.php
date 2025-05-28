@@ -37,7 +37,7 @@ try {
     foreach ($events as &$event) {
         $event['formatted_date'] = date('M d, Y', strtotime($event['event_date']));
         $event['formatted_time'] = date('g:i A', strtotime($event['event_time']));
-        $event['price_formatted'] = '$' . number_format($event['price'], 2);
+        $event['price_formatted'] = 'XAF' . number_format($event['price'], 2);
     }
     
     echo json_encode($events);

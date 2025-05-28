@@ -1,0 +1,269 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.5 Chrome/134.0.6998.205 Electron/35.3.0 Safari/537.36" version="27.0.5">
+  <diagram id="nerala-system-architecture" name="Nerala System Architecture">
+    <mxGraphModel dx="856" dy="561" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="section-client" value="Client" style="swimlane;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="40" y="40" width="300" height="740" as="geometry" />
+        </mxCell>
+        <mxCell id="icon-flutter" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;imageAspect=0;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MC4wOSA0OS40Ij48cGF0aCBmaWxsPSIjMDFlOGY4IiBkPSJNMzkuOTMgNDAuNTdsLTkuOS05LjlIMTEuODl2LS4wMWwtOS45IDkuOTFjLS43MS43MS4yNCAxLjg5IDEuMTkuOTRsOS42OS05LjY5aDEzLjIybDkuODYgOS44NmMuNjUuNjUgNC42OS0zLjMzIDMuOTgtNC4wMVoiLz48cGF0aCBmaWxsPSIjMDZiNmQzIiBkPSJtMTYuMiAxMi40Ni0xNS4wNyAxNS4wN2MtLjU2LjU2LjI0IDEuNy45NC45NGw5LjU1LTkuNTVoOS4wNWwxMC4xMy0xMC4xM2MuNjUuMDEgOS4yNS05LjA1IDkuMjUtOS4wNUwzMC4wOSAwTDE2LjIgMTIuNDZaIi8+PHBhdGggZmlsbD0iIzA3NzM4YiIgZD0ibTI0LjY3IDMwLjY3LTYuMi02LjJ2LTYuMTlsLTEyLjE1IDEyLjE1Yy0uNjUuNjUuMjkgMS44OC45NC45NGw2LjI0LTYuMjRoNS4wOGw2LjA5IDYuMDl2LjA0bDEzLjA3LTEzLjA3LTYuMDQtNi4wNC05Ljc1IDkuNzZ2OC43NloiLz48L3N2Zz4=;" parent="section-client" vertex="1">
+          <mxGeometry x="30" y="45" width="40" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="flutter-app" value="Flutter Mobile App" style="rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;" parent="section-client" vertex="1">
+          <mxGeometry x="80" y="50" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="app-modules" value="App Architecture" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f5f5f5;strokeColor=#666666;gradientColor=#ffffff;" parent="section-client" vertex="1">
+          <mxGeometry x="45" y="120" width="210" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="presentation-layer" value="Presentation Layer" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;" parent="section-client" vertex="1">
+          <mxGeometry x="60" y="160" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="presentation-layer-items" value="- UI Components&#xa;- Screens/Pages&#xa;- Widgets" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="presentation-layer" vertex="1">
+          <mxGeometry y="26" width="180" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="business-layer" value="Business Logic Layer" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="section-client" vertex="1">
+          <mxGeometry x="60" y="250" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="business-layer-items" value="- BLoC/Provider&#xa;- Learning Path Algorithm&#xa;- State Management" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="business-layer" vertex="1">
+          <mxGeometry y="26" width="180" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="feature-modules" value="Feature Modules" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="section-client" vertex="1">
+          <mxGeometry x="45" y="350" width="210" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="feature-auth" value="Authentication Module" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=1" parent="feature-modules" vertex="1">
+          <mxGeometry y="26" width="210" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="feature-learning" value="Learning Path Module" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=1" parent="feature-modules" vertex="1">
+          <mxGeometry y="50" width="210" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="feature-ai-chat" value="AI Conversation Module" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=1" parent="feature-modules" vertex="1">
+          <mxGeometry y="74" width="210" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="feature-dictionary" value="Dictionary &amp; Translations" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=1" parent="feature-modules" vertex="1">
+          <mxGeometry y="98" width="210" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="feature-stories" value="Stories &amp; Content Module" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=1" parent="feature-modules" vertex="1">
+          <mxGeometry y="122" width="210" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="feature-stats" value="User Stats &amp; Progress Module" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=1" parent="feature-modules" vertex="1">
+          <mxGeometry y="146" width="210" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="api-service" value="API Service Layer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="section-client" vertex="1">
+          <mxGeometry x="45" y="540" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="api-service-attr" value="- HTTP Client&#xa;- Firebase SDK Integration&#xa;- REST API Services" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="api-service" vertex="1">
+          <mxGeometry y="26" width="210" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="local-storage" value="Device Storage" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="section-client" vertex="1">
+          <mxGeometry x="45" y="640" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="local-storage-attr" value="- Shared Preferences&#xa;- Secure Storage&#xa;- Local Database (SQLite/Hive)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="local-storage" vertex="1">
+          <mxGeometry y="26" width="210" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="section-backend" value="Backend Services" style="swimlane;startSize=30;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="380" y="40" width="350" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="icon-flask" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;imageAspect=0;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48IS0tISBGb250IEF3ZXNvbWUgRnJlZSA2LjUuMSBieSBAZm9udGF3ZXNvbWUgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbSBMaWNlbnNlIC0gaHR0cHM6Ly9mb250YXdlc29tZS5jb20vbGljZW5zZS9mcmVlIENvcHlyaWdodCAyMDIzIEZvbnRpY29ucywgSW5jLiAtLT48cGF0aCBkPSJNMjg4IDE5MnY4NGM4LjggMCAxNi03LjIgMTYtMTZWMTkyYzAtOC44LTcuMi0xNi0xNi0xNnMtMTYgNy4yLTE2IDE2em0tMTM4LjkgMTI4aC0xOC4zbC0yNyA5MC42Yy0yLjQgOCAuNiAxNi42IDcuNSAyMS41czE2LjIgNC42IDIyLjgtMS4zTDE2OCAxNDYuNXYxNTAuNGwtMTguOSAyMy4xem0yMTIuNiA5MC42LTI3LTkwLjYtMTguMy0uMEwyOTcuNSAzMjBWMTQ2LjVsMzMuNiA0MS4yYzYuNyA1LjkgMTYgNi4yIDIyLjggMS4zYzYuOS00LjkgOS45LTEzLjUgNy41LTIxLjV6TTI1Ni0uMGMtNy44IDAtMTQgNi4yLTE0IDE0VjgxLjRjLTguOS0xLjgtMTguMi0yLjgtMjcuNS0yLjhjLTQwLjEgMC03Ni(Truncated)" parent="section-backend" vertex="1">
+          <mxGeometry x="30" y="45" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="flask-backend" value="Flask API Server" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=14;" parent="section-backend" vertex="1">
+          <mxGeometry x="80" y="45" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="api-modules" value="API Endpoints" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f5f5f5;strokeColor=#666666;gradientColor=#ffffff;" parent="section-backend" vertex="1">
+          <mxGeometry x="45" y="100" width="260" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="endpoint-auth" value="/auth - Authentication Endpoints" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="api-modules" vertex="1">
+          <mxGeometry y="30" width="260" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="endpoint-ai" value="/ai/chat - AI Conversation Endpoints" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="api-modules" vertex="1">
+          <mxGeometry y="56" width="260" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="endpoint-content" value="/content - Content Delivery Endpoints" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="api-modules" vertex="1">
+          <mxGeometry y="82" width="260" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="endpoint-progress" value="/user/progress - Learning Progress Endpoints" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="api-modules" vertex="1">
+          <mxGeometry y="108" width="260" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="rag-system" value="RAG System" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="section-backend" vertex="1">
+          <mxGeometry x="45" y="260" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="rag-system-attr" value="- Document Processor&#xa;- Context Manager&#xa;- Vector Database (Embeddings)&#xa;- Language-specific Knowledge Base&#xa;- Query Augmentation Pipeline" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rag-system" vertex="1">
+          <mxGeometry y="26" width="260" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="middleware" value="API Middleware" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;" parent="section-backend" vertex="1">
+          <mxGeometry x="45" y="390" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="middleware-auth" value="- Authentication Middleware" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="middleware" vertex="1">
+          <mxGeometry y="30" width="260" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="middleware-rate" value="- Rate Limiting" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="middleware" vertex="1">
+          <mxGeometry y="56" width="260" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="middleware-logging" value="- Logging &amp; Error Handling" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="middleware" vertex="1">
+          <mxGeometry y="82" width="260" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="section-firebase" value="Firebase Services" style="swimlane;startSize=30;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="380" y="520" width="350" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="firebase-services" value="Firebase Platform" style="rounded=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=14;" parent="section-firebase" vertex="1">
+          <mxGeometry x="80" y="45" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="firebase-modules" value="Firebase Components" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;" parent="section-firebase" vertex="1">
+          <mxGeometry x="45" y="100" width="260" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="firebase-auth" value="Firebase Authentication" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=1" parent="firebase-modules" vertex="1">
+          <mxGeometry y="30" width="260" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="firebase-firestore" value="Cloud Firestore / Realtime Database" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=1" parent="firebase-modules" vertex="1">
+          <mxGeometry y="56" width="260" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="firebase-storage" value="Firebase Storage" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=1" parent="firebase-modules" vertex="1">
+          <mxGeometry y="82" width="260" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="firebase-analytics" value="Firebase Analytics &amp; Crashlytics" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=1" parent="firebase-modules" vertex="1">
+          <mxGeometry y="108" width="260" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="tGMPD0-fDZrU4b-Uyrf7-1" value="" style="strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;" vertex="1" parent="section-firebase">
+          <mxGeometry x="5" y="35" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tGMPD0-fDZrU4b-Uyrf7-2" value="Firebase" style="sketch=0;dashed=0;connectable=0;html=1;fillColor=#5184F3;strokeColor=none;shape=mxgraph.gcp2.firebase;part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=5;fontColor=#999999;fontSize=12;" vertex="1" parent="tGMPD0-fDZrU4b-Uyrf7-1">
+          <mxGeometry width="32.4" height="45" relative="1" as="geometry">
+            <mxPoint x="5" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="section-ai" value="AI Models &amp; Services" style="swimlane;startSize=30;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="770" y="40" width="350" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="icon-gemini" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;imageAspect=0;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj48cGF0aCBmaWxsPSIjODA4MkZEIiBkPSJNMzIwIDQ5OS40IDYxLjEgMTQwLjVoMTE3LjJMNDM3LjMgNDk5LjR6Ii8+PHBhdGggZmlsbD0iIzQwNDZDQyIgZD0iTTUyNy4yIDBIMzIwbDExNy4yIDQ5OS40elQiLz48cGF0aCBmaWxsPSIjMkQzMDgyIiBkPSJNNzUxLjExIDQ1NS43NjIgNTI0Ljc3OSAzLjM3OGgtMjAyLjdsMTc3LjAyMSA0NTIuMzg0elQiLz48cGF0aCBmaWxsPSIjQkRCRkZGIiBkPSJtLTEgNTU1LjYyMSAyNDIuNjc1LTU1NS42Mmg4Ny4yNzNsLTExNi4zMzEgNTU1LjYyek0iLz48L3N2Zz4=;" parent="section-ai" vertex="1">
+          <mxGeometry x="30" y="45" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="gemini-service" value="Google Gemini AI" style="rounded=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=14;" parent="section-ai" vertex="1">
+          <mxGeometry x="80" y="45" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="gemini-components" value="Gemini Integration" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="section-ai" vertex="1">
+          <mxGeometry x="45" y="100" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="gemini-chat" value="- Gemini Chat API" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="gemini-components" vertex="1">
+          <mxGeometry y="30" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gemini-embed" value="- Embeddings Generation" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="gemini-components" vertex="1">
+          <mxGeometry y="60" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gemini-multi" value="- Multimodal Capabilities" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="gemini-components" vertex="1">
+          <mxGeometry y="90" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="language-models" value="Language-Specific Modules" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="section-ai" vertex="1">
+          <mxGeometry x="45" y="230" width="260" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="language-specifics" value="- Language-specific Fine-tuning&#xa;- Cultural Context Adaptation" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="language-models" vertex="1">
+          <mxGeometry y="30" width="260" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="section-infra" value="Infrastructure &amp; DevOps" style="swimlane;startSize=30;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="770" y="380" width="350" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="cloud-hosting" value="Cloud Hosting" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="section-infra" vertex="1">
+          <mxGeometry x="45" y="50" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="cloud-hosting-items" value="- Google Cloud Platform / AWS&#xa;- Container Orchestration&#xa;- Serverless Functions" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="cloud-hosting" vertex="1">
+          <mxGeometry y="30" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cicd" value="CI/CD Pipeline" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="section-infra" vertex="1">
+          <mxGeometry x="45" y="160" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="cicd-items" value="- GitHub Actions &#xa;- Automated Testing&#xa;- Continuous Deployment" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="cicd" vertex="1">
+          <mxGeometry y="30" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="monitoring" value="Monitoring &amp; Analytics" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="section-infra" vertex="1">
+          <mxGeometry x="45" y="270" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="monitoring-items" value="- Application Performance Monitoring&#xa;- Error Tracking&#xa;- Usage Analytics&#xa;- Cost Monitoring" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="monitoring" vertex="1">
+          <mxGeometry y="30" width="260" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="client-to-backend" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="section-client" target="section-backend" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="155" as="sourcePoint" />
+            <mxPoint x="400" y="155" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="client-to-backend-label" value="HTTPS API Calls" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="client-to-backend" vertex="1" connectable="0">
+          <mxGeometry x="-0.0357" y="1" relative="1" as="geometry">
+            <mxPoint y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="client-to-firebase" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="section-client" target="section-firebase" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="595" as="sourcePoint" />
+            <mxPoint x="400" y="595" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="client-to-firebase-label" value="Firebase SDK" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="client-to-firebase" vertex="1" connectable="0">
+          <mxGeometry x="-0.0357" y="1" relative="1" as="geometry">
+            <mxPoint y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="backend-to-firebase" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="section-backend" target="section-firebase" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="555" y="510" as="sourcePoint" />
+            <mxPoint x="555" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="backend-to-firebase-label" value="Firebase Admin SDK" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="backend-to-firebase" vertex="1" connectable="0">
+          <mxGeometry x="-0.0357" y="1" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="backend-to-gemini" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="section-backend" target="section-ai" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="710" y="155" as="sourcePoint" />
+            <mxPoint x="760" y="155" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="backend-to-gemini-label" value="Gemini API" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="backend-to-gemini" vertex="1" connectable="0">
+          <mxGeometry x="-0.0357" y="1" relative="1" as="geometry">
+            <mxPoint y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gemini-to-rag" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="section-ai" target="rag-system" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="770" y="290" as="sourcePoint" />
+            <mxPoint x="510" y="290" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="858" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gemini-to-rag-label" value="Augmented Prompts" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="gemini-to-rag" vertex="1" connectable="0">
+          <mxGeometry x="0.1231" y="-1" relative="1" as="geometry">
+            <mxPoint x="-74" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="backend-to-infra" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="section-backend" target="section-infra" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="710" y="400" as="sourcePoint" />
+            <mxPoint x="760" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="backend-to-infra-label" value="Deployment &amp; Monitoring" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="backend-to-infra" vertex="1" connectable="0">
+          <mxGeometry x="-0.0357" y="1" relative="1" as="geometry">
+            <mxPoint y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="firebase-to-infra" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="section-firebase" target="section-infra" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="710" y="650" as="sourcePoint" />
+            <mxPoint x="760" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="firebase-to-infra-label" value="Cloud Services" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="firebase-to-infra" vertex="1" connectable="0">
+          <mxGeometry x="-0.0357" y="1" relative="1" as="geometry">
+            <mxPoint y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="data-flow-title" value="NERALA SYSTEM ARCHITECTURE" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="290" y="5" width="590" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

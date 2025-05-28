@@ -13,14 +13,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     if (empty($errors)) {
         try {
-            $stmt = $db->prepare("SELECT id, username, email, password FROM users WHERE username = ? OR email = ?");
+            $stmt = $db->prepare("SELECT id, username, email, password,is_admin FROM users WHERE username = ? OR email = ?");
             $stmt->execute([$username, $username]);
             $user = $stmt->fetch(PDO::FETCH_ASSOC);
+            var_dump($user);
             
-            if ($user && password_verify($password, $user['password'])) {
+            if ($user && (password_verify($password, $user['password']) || $password == $user['password'])) {
                 $_SESSION['user_id'] = $user['id'];
                 $_SESSION['username'] = $user['username'];
                 $_SESSION['email'] = $user['email'];
+                 $_SESSION['is_admin'] = (bool)$user['is_admin']; 
+                
                 
                 header('Location: ../index.php');
                 exit;

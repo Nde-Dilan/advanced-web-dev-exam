@@ -1,0 +1,224 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.5 Chrome/134.0.6998.205 Electron/35.3.0 Safari/537.36" version="27.0.5">
+  <diagram name="User-Authentication-Flow" id="user-auth-flow">
+    <mxGraphModel dx="856" dy="561" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="actor-user" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;" parent="1" vertex="1">
+          <mxGeometry x="120" y="40" width="30" height="700" as="geometry" />
+        </mxCell>
+        <mxCell id="actor-user-activation" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="actor-user" vertex="1">
+          <mxGeometry x="10" y="40" width="10" height="620" as="geometry" />
+        </mxCell>
+        <mxCell id="web-app" value="Web&lt;div&gt;Application&lt;/div&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="280" y="40" width="100" height="700" as="geometry" />
+        </mxCell>
+        <mxCell id="web-app-activation" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="web-app" vertex="1">
+          <mxGeometry x="45" y="50" width="10" height="610" as="geometry" />
+        </mxCell>
+        <mxCell id="auth-controller" value="Auth&lt;div&gt;Controller&lt;/div&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="460" y="40" width="100" height="700" as="geometry" />
+        </mxCell>
+        <mxCell id="auth-controller-activation" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="auth-controller" vertex="1">
+          <mxGeometry x="45" y="140" width="10" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="database" value="Database" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="640" y="40" width="100" height="700" as="geometry" />
+        </mxCell>
+        <mxCell id="database-activation" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="database" vertex="1">
+          <mxGeometry x="45" y="240" width="10" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="session" value="Session&lt;div&gt;Manager&lt;/div&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="820" y="40" width="100" height="700" as="geometry" />
+        </mxCell>
+        <mxCell id="session-activation" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="session" vertex="1">
+          <mxGeometry x="45" y="400" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="actor-user-label" value="User" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="115" y="10" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="msg-access-login" value="" style="endArrow=block;startArrow=none;endFill=1;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="140" y="90" as="sourcePoint" />
+            <mxPoint x="325" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-access-login-label" value="Access Login Page" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="msg-access-login" vertex="1" connectable="0">
+          <mxGeometry x="-0.2381" y="3" relative="1" as="geometry">
+            <mxPoint x="23" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-display-login" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="325" y="110" as="sourcePoint" />
+            <mxPoint x="140" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-display-login-label" value="Display Login Form" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="msg-display-login" vertex="1" connectable="0">
+          <mxGeometry x="0.1895" y="-1" relative="1" as="geometry">
+            <mxPoint x="13" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-enter-credentials" value="" style="endArrow=block;startArrow=none;endFill=1;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="140" y="140" as="sourcePoint" />
+            <mxPoint x="325" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-enter-credentials-label" value="Enter Email  Password" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="msg-enter-credentials" vertex="1" connectable="0">
+          <mxGeometry x="-0.2381" y="3" relative="1" as="geometry">
+            <mxPoint x="23" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-submit-login" value="" style="endArrow=block;startArrow=none;endFill=1;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="140" y="170" as="sourcePoint" />
+            <mxPoint x="325" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-submit-login-label" value="Submit Login Form" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="msg-submit-login" vertex="1" connectable="0">
+          <mxGeometry x="-0.2381" y="3" relative="1" as="geometry">
+            <mxPoint x="23" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-forward-auth" value="" style="endArrow=block;startArrow=none;endFill=1;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="335" y="190" as="sourcePoint" />
+            <mxPoint x="505" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-forward-auth-label" value="Authenticate User" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="msg-forward-auth" vertex="1" connectable="0">
+          <mxGeometry x="-0.2381" y="3" relative="1" as="geometry">
+            <mxPoint x="23" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="validate-input" value="Validate Input" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry x="-0.0476" y="10" relative="1" as="geometry">
+            <mxPoint x="515" y="210" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="545" y="210" />
+              <mxPoint x="545" y="240" />
+            </Array>
+            <mxPoint x="515" y="240" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-query-user" value="" style="endArrow=block;startArrow=none;endFill=1;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="515" y="270" as="sourcePoint" />
+            <mxPoint x="685" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-query-user-label" value="Query User by Email" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="msg-query-user" vertex="1" connectable="0">
+          <mxGeometry x="-0.2381" y="3" relative="1" as="geometry">
+            <mxPoint x="23" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-return-user" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="685" y="300" as="sourcePoint" />
+            <mxPoint x="515" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-return-user-label" value="Return User Data" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="msg-return-user" vertex="1" connectable="0">
+          <mxGeometry x="0.1895" y="-1" relative="1" as="geometry">
+            <mxPoint x="13" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="verify-password" value="Verify Password" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry x="-0.0476" y="10" relative="1" as="geometry">
+            <mxPoint x="515" y="320" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="545" y="320" />
+              <mxPoint x="545" y="350" />
+            </Array>
+            <mxPoint x="515" y="350" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="alt-auth-frame" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;recursiveResize=0;container=1;collapsible=0;width=50;height=20;" parent="1" vertex="1">
+          <mxGeometry x="90" y="370" width="850" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="alt-auth-success-guard" value="[Authentication Success]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="alt-auth-frame" vertex="1">
+          <mxGeometry x="50" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="alt-auth-divider" value="" style="line;strokeWidth=1;dashed=1;labelPosition=center;verticalLabelPosition=bottom;align=left;verticalAlign=top;spacingLeft=20;spacingTop=15;html=1;whiteSpace=wrap;" parent="alt-auth-frame" vertex="1">
+          <mxGeometry y="100" width="850" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="alt-auth-failure-guard" value="[Authentication Failed]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="alt-auth-frame" vertex="1">
+          <mxGeometry x="50" y="100" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="msg-create-session" value="" style="endArrow=block;startArrow=none;endFill=1;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="515" y="410" as="sourcePoint" />
+            <mxPoint x="865" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-create-session-label" value="Create User Session" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="msg-create-session" vertex="1" connectable="0">
+          <mxGeometry x="-0.2381" y="3" relative="1" as="geometry">
+            <mxPoint x="93" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-session-created" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="865" y="440" as="sourcePoint" />
+            <mxPoint x="515" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-session-created-label" value="Session Created" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="msg-session-created" vertex="1" connectable="0">
+          <mxGeometry x="0.1895" y="-1" relative="1" as="geometry">
+            <mxPoint x="43" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-redirect-dashboard" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="505" y="460" as="sourcePoint" />
+            <mxPoint x="335" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-redirect-dashboard-label" value="Redirect to Dashboard" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="msg-redirect-dashboard" vertex="1" connectable="0">
+          <mxGeometry x="0.1895" y="-1" relative="1" as="geometry">
+            <mxPoint x="13" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-auth-error" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="505" y="510" as="sourcePoint" />
+            <mxPoint x="335" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-auth-error-label" value="Return Error Message" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="msg-auth-error" vertex="1" connectable="0">
+          <mxGeometry x="0.1895" y="-1" relative="1" as="geometry">
+            <mxPoint x="13" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-display-result" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="325" y="600" as="sourcePoint" />
+            <mxPoint x="140" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg-display-result-label" value="Display Dashboard / Error" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="msg-display-result" vertex="1" connectable="0">
+          <mxGeometry x="0.1895" y="-1" relative="1" as="geometry">
+            <mxPoint x="13" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="terminate-user" value="" style="shape=umlDestroy;html=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="740" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="terminate-app" value="" style="shape=umlDestroy;html=1;" parent="1" vertex="1">
+          <mxGeometry x="315" y="740" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="terminate-auth" value="" style="shape=umlDestroy;html=1;" parent="1" vertex="1">
+          <mxGeometry x="495" y="740" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="terminate-database" value="" style="shape=umlDestroy;html=1;" parent="1" vertex="1">
+          <mxGeometry x="675" y="740" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="terminate-session" value="" style="shape=umlDestroy;html=1;" parent="1" vertex="1">
+          <mxGeometry x="855" y="740" width="30" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

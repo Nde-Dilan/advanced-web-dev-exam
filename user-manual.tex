@@ -1,0 +1,682 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{tcolorbox}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{amssymb}
+
+% Page setup
+\geometry{margin=1in}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\thepage}
+\lhead{EventBook User Manual}
+
+% Title formatting
+\titleformat{\section}{\large\bfseries\color{blue!70!black}}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries\color{blue!60!black}}{\thesubsection}{1em}{}
+
+% Custom colors
+\definecolor{primary}{RGB}{0,123,255}
+\definecolor{success}{RGB}{40,167,69}
+\definecolor{warning}{RGB}{255,193,7}
+\definecolor{danger}{RGB}{220,53,69}
+\definecolor{info}{RGB}{23,162,184}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primary,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={EventBook User Manual},
+    pdfpagemode=FullScreen,
+}
+
+% Custom boxes for steps and tips
+\newtcolorbox{stepbox}[1]{
+    colback=blue!5!white,
+    colframe=blue!75!black,
+    title=#1,
+    fonttitle=\bfseries
+}
+
+\newtcolorbox{tipbox}[1]{
+    colback=green!5!white,
+    colframe=green!75!black,
+    title=💡 #1,
+    fonttitle=\bfseries
+}
+
+\newtcolorbox{warningbox}[1]{
+    colback=orange!5!white,
+    colframe=orange!75!black,
+    title=⚠️ #1,
+    fonttitle=\bfseries
+}
+
+\newtcolorbox{importantbox}[1]{
+    colback=red!5!white,
+    colframe=red!75!black,
+    title=❗ #1,
+    fonttitle=\bfseries
+}
+
+\begin{document}
+
+% Title page
+\begin{titlepage}
+    \centering
+    \vspace*{1.5cm}
+    
+    {\huge\bfseries\color{primary} EventBook User Manual\par}
+    \vspace{0.8cm}
+    {\Large\color{gray} Your Complete Guide to Event Booking\par}
+    \vspace{2cm}
+    
+    % Add logo placeholder
+    \includegraphics[width=0.3\textwidth]{logo-placeholder.png}
+    \vspace{1.5cm}
+    
+    {\large\itshape Easy • Fast • Secure Event Booking\par}
+    \vspace{1cm}
+    
+    {\large May 2025\par}
+    
+    \vfill
+    
+    \begin{tcolorbox}[colback=blue!10!white,colframe=blue!50!black,width=0.8\textwidth]
+    \centering
+    {\large\bfseries What You'll Learn:\par}
+    \vspace{0.5cm}
+    \begin{itemize}[leftmargin=2cm]
+        \item How to create an account and log in
+        \item Finding and browsing events
+        \item Booking tickets step-by-step
+        \item Managing your bookings
+        \item Admin features (for administrators)
+    \end{itemize}
+    \end{tcolorbox}
+    
+    \vfill
+\end{titlepage}
+
+\newpage
+\tableofcontents
+\newpage
+
+% Getting Started
+\section{Getting Started}
+
+\subsection{Welcome to EventBook! 🎉}
+
+EventBook is your one-stop platform for discovering and booking tickets to amazing events in Cameroon. Whether you're looking for cultural celebrations, business conferences, entertainment shows, or community gatherings, EventBook makes it easy to find and book the perfect event for you.
+
+\subsection{System Requirements}
+
+To use EventBook, you need:
+\begin{itemize}
+    \item A computer, tablet, or smartphone with internet connection
+    \item A modern web browser (Chrome, Firefox, Safari, or Edge)
+    \item An email address for account registration
+\end{itemize}
+
+\tipbox{Pro Tip}
+EventBook works great on mobile devices! You can book events on-the-go from your smartphone.
+\end{tipbox}
+
+\subsection{Accessing EventBook}
+
+\begin{stepbox}{How to Access the Platform}
+\begin{enumerate}
+    \item Open your web browser
+    \item Go to the EventBook website (your local server or live URL)
+    \item You'll see the homepage with featured events
+    \item Ready to start exploring! 🚀
+\end{enumerate}
+\end{stepbox}
+
+% Account Management
+\section{Creating Your Account}
+
+\subsection{Why Create an Account?}
+
+Having an EventBook account allows you to:
+\begin{itemize}
+    \item ✅ Book tickets for events
+    \item ✅ Save events to your cart
+    \item ✅ View your booking history
+    \item ✅ Download tickets
+    \item ✅ Receive booking confirmations
+\end{itemize}
+
+\subsection{Registration Process}
+
+\begin{stepbox}{Step-by-Step Registration}
+\begin{enumerate}
+    \item Click the \textbf{"Register"} button in the top-right corner
+    \item Fill out the registration form:
+        \begin{itemize}
+            \item \textbf{Full Name}: Your complete name
+            \item \textbf{Email}: A valid email address (you'll need this to log in)
+            \item \textbf{Phone}: Your phone number for booking confirmations
+            \item \textbf{Password}: Choose a strong password (at least 8 characters)
+            \item \textbf{Confirm Password}: Re-enter your password
+        \end{itemize}
+    \item Click \textbf{"Create Account"}
+    \item You'll be automatically logged in and redirected to the homepage
+\end{enumerate}
+\end{stepbox}
+
+\warningbox{Important}
+Make sure to use a valid email address - you'll need it to recover your account if you forget your password.
+\end{warningbox}
+
+\subsection{Logging In}
+
+\begin{stepbox}{How to Log In}
+\begin{enumerate}
+    \item Click the \textbf{"Login"} button in the top-right corner
+    \item Enter your email address and password
+    \item Click \textbf{"Login"}
+    \item You'll be taken to the homepage, now logged in
+\end{enumerate}
+\end{stepbox}
+
+\tipbox{Forgot Password?}
+If you forget your password, contact the system administrator for assistance. A password reset feature will be added in future updates.
+\end{tipbox}
+
+% Browsing Events
+\section{Finding Events}
+
+\subsection{Homepage Overview}
+
+When you visit EventBook, you'll see:
+\begin{itemize}
+    \item \textbf{Featured Events}: Special highlighted events at the top
+    \item \textbf{Upcoming Events}: All available events listed below
+    \item \textbf{Search Bar}: To find specific events
+    \item \textbf{Navigation Menu}: Access to different sections
+\end{itemize}
+
+\subsection{Browsing Events}
+
+\begin{stepbox}{Exploring Available Events}
+\begin{enumerate}
+    \item \textbf{Scroll through the homepage} to see featured events
+    \item \textbf{Click "View All Events"} to see the complete event listing
+    \item Each event card shows:
+        \begin{itemize}
+            \item Event title and description
+            \item Date and time
+            \item Venue location
+            \item Ticket price
+            \item Event image
+        \end{itemize}
+    \item \textbf{Click "View Details"} on any event to learn more
+\end{enumerate}
+\end{stepbox}
+
+\subsection{Using the Search Feature}
+
+\begin{stepbox}{How to Search for Events}
+\begin{enumerate}
+    \item Click on the \textbf{search bar} at the top of the page
+    \item Type keywords related to your event:
+        \begin{itemize}
+            \item Event name (e.g., "Music Festival")
+            \item Location (e.g., "Douala")
+            \item Event type (e.g., "Conference")
+        \end{itemize}
+    \item Press \textbf{Enter} or click the search button
+    \item Browse through the search results
+\end{enumerate}
+\end{stepbox}
+
+\tipbox{Search Tips}
+Try different keywords if you don't find what you're looking for. For example, try "music" instead of "concert" or "business" instead of "conference".
+\end{tipbox}
+
+\subsection{Event Details Page}
+
+When you click "View Details" on an event, you'll see:
+
+\begin{itemize}
+    \item \textbf{Complete Event Information}:
+        \begin{itemize}
+            \item Full description
+            \item Date and time
+            \item Venue name and address
+            \item Organizer information
+            \item Contact details
+        \end{itemize}
+    \item \textbf{Pricing Information}:
+        \begin{itemize}
+            \item Ticket price
+            \item Available tickets remaining
+        \end{itemize}
+    \item \textbf{Booking Options}:
+        \begin{itemize}
+            \item Add to cart button
+            \item Quantity selector
+        \end{itemize}
+\end{itemize}
+
+% Booking Process
+\section{Booking Your Tickets}
+
+\subsection{Understanding the Cart System}
+
+EventBook uses a shopping cart system, similar to online shopping:
+\begin{itemize}
+    \item Add multiple events to your cart
+    \item Review your selections
+    \item Checkout all events at once
+    \item Get one booking confirmation for everything
+\end{itemize}
+
+\subsection{Adding Events to Cart}
+
+\begin{stepbox}{How to Add Events to Your Cart}
+\begin{enumerate}
+    \item Find an event you want to attend
+    \item Click \textbf{"View Details"} to see full information
+    \item Choose the number of tickets you want (use the quantity selector)
+    \item Click \textbf{"Add to Cart"}
+    \item You'll see a confirmation message
+    \item The cart icon in the top menu will show your item count
+\end{enumerate}
+\end{stepbox}
+
+\importantbox{Login Required}
+You must be logged in to add events to your cart. If you're not logged in, you'll be redirected to the login page.
+\end{importantbox}
+
+\subsection{Managing Your Cart}
+
+\begin{stepbox}{Viewing and Managing Your Cart}
+\begin{enumerate}
+    \item Click the \textbf{cart icon} in the top navigation
+    \item You'll see all events in your cart with:
+        \begin{itemize}
+            \item Event details
+            \item Quantity selected
+            \item Individual price
+            \item Total price per event
+        \end{itemize}
+    \item To \textbf{change quantity}: Use the +/- buttons
+    \item To \textbf{remove an event}: Click the "Remove" button
+    \item \textbf{Total amount} is calculated automatically
+\end{enumerate}
+\end{stepbox}
+
+\subsection{Checkout Process}
+
+\begin{stepbox}{Completing Your Booking}
+\begin{enumerate}
+    \item From your cart, click \textbf{"Proceed to Checkout"}
+    \item Review your order summary
+    \item Fill in attendee information:
+        \begin{itemize}
+            \item Primary attendee name
+            \item Contact phone number
+            \item Any special requirements
+        \end{itemize}
+    \item Choose payment method:
+        \begin{itemize}
+            \item Cash payment (pay at venue)
+            \item Bank transfer (instructions provided)
+        \end{itemize}
+    \item Review all details carefully
+    \item Click \textbf{"Complete Booking"}
+\end{enumerate}
+\end{stepbox}
+
+\warningbox{Double-Check Your Information}
+Make sure all details are correct before completing your booking. Changes may not be possible after confirmation.
+\end{warningbox}
+
+\subsection{Booking Confirmation}
+
+After successful booking:
+\begin{itemize}
+    \item You'll see a confirmation page with your booking reference number
+    \item Your cart will be cleared
+    \item You can view and download your tickets
+    \item The booking appears in your booking history
+\end{itemize}
+
+\tipbox{Save Your Booking Reference}
+Write down or screenshot your booking reference number. You'll need it for any inquiries about your booking.
+\end{tipbox}
+
+% Managing Bookings
+\section{Managing Your Bookings}
+
+\subsection{Viewing Booking History}
+
+\begin{stepbox}{How to Access Your Bookings}
+\begin{enumerate}
+    \item Make sure you're logged in
+    \item Click your username in the top-right corner
+    \item Select \textbf{"Booking History"} from the menu
+    \item You'll see all your past and upcoming bookings
+\end{enumerate}
+\end{stepbox}
+
+\subsection{Understanding Booking Information}
+
+Each booking in your history shows:
+\begin{itemize}
+    \item \textbf{Booking Reference}: Unique booking number
+    \item \textbf{Booking Date}: When you made the booking
+    \item \textbf{Events Booked}: List of all events in this booking
+    \item \textbf{Total Amount}: Total cost paid
+    \item \textbf{Status}: Current booking status
+    \item \textbf{Ticket Download}: Link to download tickets
+\end{itemize}
+
+\subsection{Downloading Tickets}
+
+\begin{stepbox}{How to Download Your Tickets}
+\begin{enumerate}
+    \item Go to your booking history
+    \item Find the booking you want tickets for
+    \item Click the \textbf{"Download Tickets"} button
+    \item A PDF file will be generated and downloaded
+    \item Print the tickets or save them on your phone
+\end{enumerate}
+\end{stepbox}
+
+\tipbox{Ticket Requirements}
+Bring either printed tickets or show them on your phone at the event venue. Make sure your phone battery is charged!
+\end{tipbox}
+
+% Troubleshooting
+\section{Common Questions \& Troubleshooting}
+
+\subsection{Frequently Asked Questions}
+
+\subsubsection{Can I cancel my booking?}
+Currently, the system doesn't support online cancellations. Contact the event organizer directly using the contact information provided in your booking confirmation.
+
+\subsubsection{What if an event is cancelled?}
+If an event is cancelled by the organizer, you'll be contacted using the information you provided during registration. Refunds will be processed according to the organizer's policy.
+
+\subsubsection{Can I transfer my tickets to someone else?}
+Contact the event organizer directly to inquire about ticket transfers. Policies vary by event.
+
+\subsubsection{What payment methods are accepted?}
+Currently, the system supports:
+\begin{itemize}
+    \item Cash payment at the venue
+    \item Bank transfer (details provided after booking)
+\end{itemize}
+
+\subsection{Common Issues and Solutions}
+
+\subsubsection{I can't log in}
+\begin{itemize}
+    \item Check that you're using the correct email address
+    \item Ensure your password is correct (remember it's case-sensitive)
+    \item Try clearing your browser cache and cookies
+    \item Contact support if the problem persists
+\end{itemize}
+
+\subsubsection{I can't add events to my cart}
+\begin{itemize}
+    \item Make sure you're logged in
+    \item Check that the event isn't sold out
+    \item Try refreshing the page
+    \item Ensure your browser allows cookies
+\end{itemize}
+
+\subsubsection{My booking didn't go through}
+\begin{itemize}
+    \item Check your booking history to confirm
+    \item Look for a booking reference number
+    \item If no booking appears, try the process again
+    \item Contact support with any error messages you received
+\end{itemize}
+
+\subsubsection{I didn't receive my booking confirmation}
+\begin{itemize}
+    \item Check your spam/junk email folder
+    \item Verify you used the correct email address during registration
+    \item You can always access your booking through the website
+    \item Contact support if needed
+\end{itemize}
+
+% Admin Features
+\section{Administrator Features}
+
+\importantbox{Admin Access Only}
+This section is only for users with administrator privileges. Regular users won't see these features.
+\end{importantbox}
+
+\subsection{Accessing the Admin Panel}
+
+\begin{stepbox}{How Admins Access Admin Features}
+\begin{enumerate}
+    \item Log in with an administrator account
+    \item You'll see an \textbf{"Admin Panel"} link in the navigation menu
+    \item Click it to access administrative functions
+\end{enumerate}
+\end{stepbox}
+
+\subsection{Managing Events}
+
+\subsubsection{Adding New Events}
+
+\begin{stepbox}{Creating a New Event}
+\begin{enumerate}
+    \item Go to the Admin Panel
+    \item Click \textbf{"Manage Events"}
+    \item Click \textbf{"Add New Event"}
+    \item Fill in all event details:
+        \begin{itemize}
+            \item Event title and description
+            \item Date and time
+            \item Venue information
+            \item Pricing
+            \item Capacity limits
+            \item Organizer information
+        \end{itemize}
+    \item Upload an event image (optional but recommended)
+    \item Set if the event should be featured
+    \item Click \textbf{"Save Event"}
+\end{enumerate}
+\end{stepbox}
+
+\subsubsection{Editing Existing Events}
+
+\begin{stepbox}{Modifying Event Information}
+\begin{enumerate}
+    \item Go to \textbf{"Manage Events"}
+    \item Find the event you want to edit
+    \item Click the \textbf{"Edit"} button
+    \item Make necessary changes
+    \item Click \textbf{"Update Event"}
+\end{enumerate}
+\end{stepbox}
+
+\subsubsection{Managing Event Status}
+
+Administrators can change event status:
+\begin{itemize}
+    \item \textbf{Active}: Event is visible and bookable
+    \item \textbf{Inactive}: Event is hidden from public view
+    \item \textbf{Cancelled}: Event is cancelled
+    \item \textbf{Full}: Event has reached capacity
+\end{itemize}
+
+\subsection{Managing Bookings}
+
+\subsubsection{Viewing All Bookings}
+
+\begin{stepbox}{Accessing Booking Management}
+\begin{enumerate}
+    \item Go to the Admin Panel
+    \item Click \textbf{"Manage Bookings"}
+    \item You'll see a list of all bookings with:
+        \begin{itemize}
+            \item Booking reference
+            \item Customer information
+            \item Events booked
+            \item Booking date and status
+            \item Total amount
+        \end{itemize}
+\end{enumerate}
+\end{stepbox}
+
+\subsubsection{Generating Reports}
+
+\begin{stepbox}{Creating Booking Reports}
+\begin{enumerate}
+    \item Go to \textbf{"Reports"} in the admin panel
+    \item Choose report type:
+        \begin{itemize}
+            \item Bookings by date range
+            \item Bookings by event
+            \item Revenue reports
+        \end{itemize}
+    \item Set the date range or filters
+    \item Click \textbf{"Generate Report"}
+    \item Download or print the report
+\end{enumerate}
+\end{stepbox}
+
+\subsection{User Management}
+
+Administrators can:
+\begin{itemize}
+    \item View all registered users
+    \item Search for specific users
+    \item View user booking histories
+    \item Manage user permissions (if needed)
+\end{itemize}
+
+% Tips for Success
+\section{Tips for the Best Experience}
+
+\subsection{For Event-Goers}
+
+\tipbox{Booking Tips}
+\begin{itemize}
+    \item Book early for popular events - tickets may sell out
+    \item Double-check event dates and times before booking
+    \item Save your booking reference in a safe place
+    \item Arrive at events early with your tickets ready
+    \item Contact organizers directly for event-specific questions
+\end{itemize}
+\end{tipbox}
+
+\subsection{For Event Organizers}
+
+\tipbox{Event Management Tips}
+\begin{itemize}
+    \item Provide clear, detailed event descriptions
+    \item Use high-quality images to attract attendees
+    \item Set realistic capacity limits
+    \item Respond promptly to attendee inquiries
+    \item Update event information if details change
+\end{itemize}
+\end{tipbox}
+
+\subsection{Security Best Practices}
+
+\warningbox{Keep Your Account Safe}
+\begin{itemize}
+    \item Use a strong, unique password
+    \item Don't share your login credentials
+    \item Log out when using shared computers
+    \item Contact support if you suspect unauthorized access
+\end{itemize}
+\end{warningbox}
+
+% Support and Contact
+\section{Getting Help}
+
+\subsection{When to Contact Support}
+
+Contact support if you experience:
+\begin{itemize}
+    \item Unable to create an account or log in
+    \item Problems with booking or payment
+    \item Missing booking confirmations
+    \item Technical errors or website issues
+    \item Questions about event details or policies
+\end{itemize}
+
+\subsection{How to Get Help}
+
+\begin{stepbox}{Getting Support}
+\begin{enumerate}
+    \item \textbf{First}: Check this user manual for solutions
+    \item \textbf{For event-specific questions}: Contact the event organizer directly
+    \item \textbf{For technical issues}: Contact the EventBook support team
+    \item \textbf{For booking problems}: Have your booking reference ready when contacting support
+\end{enumerate}
+\end{stepbox}
+
+\subsection{What Information to Provide}
+
+When contacting support, please include:
+\begin{itemize}
+    \item Your full name and email address
+    \item Booking reference number (if applicable)
+    \item Description of the problem
+    \item What you were trying to do when the issue occurred
+    \item Any error messages you received
+    \item Your browser type and device information
+\end{itemize}
+
+% Conclusion
+\section{Welcome to EventBook! 🎊}
+
+Congratulations! You now know how to use all the features of EventBook. Whether you're booking tickets for the next big cultural festival, a business conference, or a community celebration, EventBook makes it easy and secure.
+
+\subsection{What's Next?}
+
+\begin{itemize}
+    \item \textbf{Start exploring}: Browse the available events
+    \item \textbf{Create your account}: Join the EventBook community
+    \item \textbf{Book your first event}: Experience the simple booking process
+    \item \textbf{Spread the word}: Tell your friends about great events you discover
+\end{itemize}
+
+\subsection{Future Updates}
+
+EventBook is constantly improving! Upcoming features include:
+\begin{itemize}
+    \item Mobile app for iOS and Android
+    \item Integration with mobile money payments
+    \item Email notifications and reminders
+    \item Social sharing features
+    \item Multi-language support
+\end{itemize}
+
+\tipbox{Stay Updated}
+Keep checking back for new events and features. EventBook is your gateway to the vibrant event scene in Cameroon!
+\end{tipbox}
+
+\vspace{2cm}
+\centering
+\begin{tcolorbox}[colback=blue!10!white,colframe=blue!50!black,width=0.8\textwidth]
+\centering
+{\Large\bfseries Thank you for choosing EventBook!}\\
+\vspace{0.5cm}
+{\large Happy event booking! 🎉}
+\end{tcolorbox}
+
+\end{document}

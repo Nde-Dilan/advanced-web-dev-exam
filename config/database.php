@@ -24,5 +24,6 @@ class Database {
 
 // Initialize database connection
 $database = new Database();
+$pdo = $database->getConnection();
 $db = $database->getConnection();
 ?>

@@ -1,3 +1,10 @@
+<?php
+// Determine base path
+$base_path = '';
+if (strpos($_SERVER['REQUEST_URI'], '/admin/') !== false) {
+    $base_path = '../';
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +17,6 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/styles.css">
 </head>
 <body>

@@ -1,0 +1,495 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.5 Chrome/134.0.6998.205 Electron/35.3.0 Safari/537.36" version="27.0.5">
+  <diagram name="Booking System Use Case Diagram" id="usecase-diagram">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- System Boundary -->
+        <mxCell id="system-boundary" value="Booking Management System" style="shape=umlFrame;whiteSpace=wrap;html=1;width=200;height=30;boundedLbl=1;verticalAlign=middle;align=left;spacingLeft=5;swimlaneFillColor=default;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="240" y="40" width="920" height="820" as="geometry" />
+        </mxCell>
+
+        <!-- Actors -->
+        <mxCell id="actor-customer" value="Customer" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="200" width="30" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="actor-admin" value="Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="400" width="30" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="actor-system" value="System" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1220" y="300" width="30" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Authentication Section -->
+        <mxCell id="auth-header" value="Authentication" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="280" y="70" width="120" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-register" value="Register Account" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="110" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-login" value="Login" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="170" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-logout" value="Logout" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="230" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-verify-email" value="Verify Email" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="450" y="110" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-reset-password" value="Reset Password" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="450" y="170" width="120" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Profile Management Section -->
+        <mxCell id="profile-header" value="Profile Management" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="280" y="290" width="140" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-view-profile" value="View Profile" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="330" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-edit-profile" value="Edit Profile" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="390" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-upload-photo" value="Upload Profile Photo" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="450" y="330" width="120" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Service Management Section -->
+        <mxCell id="service-header" value="Service Management" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="620" y="70" width="140" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-browse-services" value="Browse Services" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="620" y="110" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-view-service-details" value="View Service Details" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="620" y="170" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-search-services" value="Search Services" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="620" y="230" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-filter-services" value="Filter Services" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="780" y="110" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-create-service" value="Create Service" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="780" y="170" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-manage-services" value="Manage Services" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="780" y="230" width="120" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Booking Management Section -->
+        <mxCell id="booking-header" value="Booking Management" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="280" y="460" width="140" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-create-booking" value="Create Booking" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="500" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-view-bookings" value="View My Bookings" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="560" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-modify-booking" value="Modify Booking" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="620" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-cancel-booking" value="Cancel Booking" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="680" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-select-timeslot" value="Select Time Slot" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="450" y="500" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-check-availability" value="Check Availability" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="450" y="560" width="120" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Payment Section -->
+        <mxCell id="payment-header" value="Payment Management" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="620" y="290" width="140" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-make-payment" value="Make Payment" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="620" y="330" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-view-payment-history" value="View Payment History" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="620" y="390" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-request-refund" value="Request Refund" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="620" y="450" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-process-payment" value="Process Payment" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="780" y="330" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-process-refund" value="Process Refund" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="780" y="390" width="120" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Admin Functions Section -->
+        <mxCell id="admin-header" value="Admin Functions" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="950" y="70" width="120" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-manage-users" value="Manage Users" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="950" y="110" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-view-all-bookings" value="View All Bookings" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="950" y="170" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-manage-categories" value="Manage Categories" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="950" y="230" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-manage-timeslots" value="Manage Time Slots" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="950" y="290" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-generate-reports" value="Generate Reports" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="950" y="350" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-system-settings" value="System Settings" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="950" y="410" width="120" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Notification Section -->
+        <mxCell id="notification-header" value="Notifications" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="620" y="520" width="120" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-send-confirmation" value="Send Confirmation" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="620" y="560" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-send-reminder" value="Send Reminder" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="620" y="620" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-view-notifications" value="View Notifications" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="780" y="560" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-notification-settings" value="Notification Settings" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="780" y="620" width="120" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- System Functions -->
+        <mxCell id="system-header" value="System Functions" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="950" y="490" width="140" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-auto-confirm" value="Auto-Confirm Booking" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="950" y="530" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-backup-data" value="Backup Data" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="950" y="590" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-log-activity" value="Log User Activity" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="950" y="650" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usecase-analytics" value="Track Analytics" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="950" y="710" width="120" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Customer Actor Relationships -->
+        <mxCell id="customer-register" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-customer" target="usecase-register" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="220" as="sourcePoint" />
+            <mxPoint x="220" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="customer-login" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-customer" target="usecase-login" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="220" as="sourcePoint" />
+            <mxPoint x="290" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="customer-logout" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-customer" target="usecase-logout" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="220" as="sourcePoint" />
+            <mxPoint x="290" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="customer-view-profile" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-customer" target="usecase-view-profile" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="220" as="sourcePoint" />
+            <mxPoint x="290" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="customer-edit-profile" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-customer" target="usecase-edit-profile" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="220" as="sourcePoint" />
+            <mxPoint x="290" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="customer-browse-services" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-customer" target="usecase-browse-services" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="220" as="sourcePoint" />
+            <mxPoint x="290" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="customer-view-service-details" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-customer" target="usecase-view-service-details" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="220" as="sourcePoint" />
+            <mxPoint x="290" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="customer-search-services" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-customer" target="usecase-search-services" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="220" as="sourcePoint" />
+            <mxPoint x="290" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="customer-create-booking" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-customer" target="usecase-create-booking" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="220" as="sourcePoint" />
+            <mxPoint x="290" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="customer-view-bookings" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-customer" target="usecase-view-bookings" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="220" as="sourcePoint" />
+            <mxPoint x="290" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="customer-modify-booking" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-customer" target="usecase-modify-booking" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="220" as="sourcePoint" />
+            <mxPoint x="290" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="customer-cancel-booking" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-customer" target="usecase-cancel-booking" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="220" as="sourcePoint" />
+            <mxPoint x="290" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="customer-make-payment" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-customer" target="usecase-make-payment" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="220" as="sourcePoint" />
+            <mxPoint x="290" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="customer-view-payment-history" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-customer" target="usecase-view-payment-history" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="220" as="sourcePoint" />
+            <mxPoint x="290" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="customer-request-refund" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-customer" target="usecase-request-refund" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="220" as="sourcePoint" />
+            <mxPoint x="290" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="customer-view-notifications" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-customer" target="usecase-view-notifications" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="220" as="sourcePoint" />
+            <mxPoint x="290" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Admin Actor Relationships -->
+        <mxCell id="admin-login" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-admin" target="usecase-login" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="420" as="sourcePoint" />
+            <mxPoint x="290" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="admin-create-service" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-admin" target="usecase-create-service" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="420" as="sourcePoint" />
+            <mxPoint x="290" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="admin-manage-services" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-admin" target="usecase-manage-services" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="420" as="sourcePoint" />
+            <mxPoint x="290" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="admin-manage-users" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-admin" target="usecase-manage-users" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="420" as="sourcePoint" />
+            <mxPoint x="290" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="admin-view-all-bookings" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-admin" target="usecase-view-all-bookings" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="420" as="sourcePoint" />
+            <mxPoint x="290" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="admin-manage-categories" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-admin" target="usecase-manage-categories" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="420" as="sourcePoint" />
+            <mxPoint x="290" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="admin-manage-timeslots" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-admin" target="usecase-manage-timeslots" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="420" as="sourcePoint" />
+            <mxPoint x="290" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="admin-generate-reports" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-admin" target="usecase-generate-reports" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="420" as="sourcePoint" />
+            <mxPoint x="290" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="admin-system-settings" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-admin" target="usecase-system-settings" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="420" as="sourcePoint" />
+            <mxPoint x="290" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="admin-process-payment" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-admin" target="usecase-process-payment" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="420" as="sourcePoint" />
+            <mxPoint x="290" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="admin-process-refund" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-admin" target="usecase-process-refund" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="420" as="sourcePoint" />
+            <mxPoint x="290" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- System Actor Relationships -->
+        <mxCell id="system-auto-confirm" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-system" target="usecase-auto-confirm" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1070" y="320" as="sourcePoint" />
+            <mxPoint x="1070" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="system-send-confirmation" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-system" target="usecase-send-confirmation" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1070" y="320" as="sourcePoint" />
+            <mxPoint x="1070" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="system-send-reminder" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-system" target="usecase-send-reminder" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1070" y="320" as="sourcePoint" />
+            <mxPoint x="1070" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="system-backup-data" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-system" target="usecase-backup-data" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1070" y="320" as="sourcePoint" />
+            <mxPoint x="1070" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="system-log-activity" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-system" target="usecase-log-activity" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1070" y="320" as="sourcePoint" />
+            <mxPoint x="1070" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="system-analytics" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="actor-system" target="usecase-analytics" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1070" y="320" as="sourcePoint" />
+            <mxPoint x="1070" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Include/Extend Relationships -->
+        <mxCell id="include-verify-register" value="&lt;&lt;include&gt;&gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="usecase-register" target="usecase-verify-email" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="400" y="130" as="sourcePoint" />
+            <mxPoint x="450" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="include-select-timeslot" value="&lt;&lt;include&gt;&gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="usecase-create-booking" target="usecase-select-timeslot" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="400" y="520" as="sourcePoint" />
+            <mxPoint x="450" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="include-check-availability" value="&lt;&lt;include&gt;&gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="usecase-create-booking" target="usecase-check-availability" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="400" y="540" as="sourcePoint" />
+            <mxPoint x="450" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="include-upload-photo" value="&lt;&lt;extend&gt;&gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="usecase-edit-profile" target="usecase-upload-photo" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="400" y="410" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="extend-filter-browse" value="&lt;&lt;extend&gt;&gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="usecase-browse-services" target="usecase-filter-services" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="740" y="130" as="sourcePoint" />
+            <mxPoint x="780" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

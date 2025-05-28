@@ -1,0 +1,355 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.5 Chrome/134.0.6998.205 Electron/35.3.0 Safari/537.36" version="27.0.5">
+  <diagram id="booking-class-diagram" name="Booking System Class Diagram">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- User Domain Section -->
+        <mxCell id="section-user" value="User Domain" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="40" y="40" width="400" height="300" as="geometry">
+            <mxRectangle x="40" y="40" width="120" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- User Class -->
+        <mxCell id="class-user" value="User" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="60" y="80" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="user-attr" value="- id: int&#xa;- name: string&#xa;- email: string&#xa;- phone: string&#xa;- password: string&#xa;- role: UserRole&#xa;- createdAt: DateTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="class-user" vertex="1">
+          <mxGeometry y="26" width="180" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="user-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="class-user" vertex="1">
+          <mxGeometry y="130" width="180" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="user-methods" value="+ login()&#xa;+ logout()&#xa;+ updateProfile()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="class-user" vertex="1">
+          <mxGeometry y="138" width="180" height="42" as="geometry" />
+        </mxCell>
+
+        <!-- Customer Class -->
+        <mxCell id="class-customer" value="Customer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="60" y="290" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="customer-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="class-customer" vertex="1">
+          <mxGeometry y="26" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="customer-methods" value="+ makeBooking()&#xa;+ cancelBooking()&#xa;+ viewBookings()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="class-customer" vertex="1">
+          <mxGeometry y="34" width="160" height="46" as="geometry" />
+        </mxCell>
+
+        <!-- Admin Class -->
+        <mxCell id="class-admin" value="Admin" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="260" y="290" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="admin-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="class-admin" vertex="1">
+          <mxGeometry y="26" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="admin-methods" value="+ manageServices()&#xa;+ viewAllBookings()&#xa;+ generateReports()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="class-admin" vertex="1">
+          <mxGeometry y="34" width="160" height="46" as="geometry" />
+        </mxCell>
+
+        <!-- Service Domain Section -->
+        <mxCell id="section-service" value="Service Domain" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="480" y="40" width="400" height="300" as="geometry">
+            <mxRectangle x="480" y="40" width="120" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Service Class -->
+        <mxCell id="class-service" value="Service" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="500" y="80" width="180" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="service-attr" value="- id: int&#xa;- name: string&#xa;- description: string&#xa;- duration: int&#xa;- price: decimal&#xa;- category: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="class-service" vertex="1">
+          <mxGeometry y="26" width="180" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="service-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="class-service" vertex="1">
+          <mxGeometry y="120" width="180" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="service-methods" value="+ isAvailable()&#xa;+ calculatePrice()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="class-service" vertex="1">
+          <mxGeometry y="128" width="180" height="32" as="geometry" />
+        </mxCell>
+
+        <!-- TimeSlot Class -->
+        <mxCell id="class-timeslot" value="TimeSlot" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="720" y="80" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="timeslot-attr" value="- startTime: DateTime&#xa;- endTime: DateTime&#xa;- isAvailable: bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="class-timeslot" vertex="1">
+          <mxGeometry y="26" width="140" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="timeslot-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="class-timeslot" vertex="1">
+          <mxGeometry y="80" width="140" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="timeslot-methods" value="+ reserve()&#xa;+ release()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="class-timeslot" vertex="1">
+          <mxGeometry y="88" width="140" height="32" as="geometry" />
+        </mxCell>
+
+        <!-- Booking Domain Section -->
+        <mxCell id="section-booking" value="Booking Domain" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="40" y="400" width="840" height="350" as="geometry">
+            <mxRectangle x="40" y="400" width="120" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Booking Class -->
+        <mxCell id="class-booking" value="Booking" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="60" y="440" width="180" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="booking-attr" value="- id: int&#xa;- customerId: int&#xa;- serviceId: int&#xa;- bookingDate: DateTime&#xa;- status: BookingStatus&#xa;- totalAmount: decimal&#xa;- notes: string&#xa;- createdAt: DateTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="class-booking" vertex="1">
+          <mxGeometry y="26" width="180" height="124" as="geometry" />
+        </mxCell>
+        <mxCell id="booking-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="class-booking" vertex="1">
+          <mxGeometry y="150" width="180" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="booking-methods" value="+ confirm()&#xa;+ cancel()&#xa;+ reschedule()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="class-booking" vertex="1">
+          <mxGeometry y="158" width="180" height="42" as="geometry" />
+        </mxCell>
+
+        <!-- Payment Class -->
+        <mxCell id="class-payment" value="Payment" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="300" y="440" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="payment-attr" value="- id: int&#xa;- bookingId: int&#xa;- amount: decimal&#xa;- method: PaymentMethod&#xa;- status: PaymentStatus&#xa;- transactionId: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="class-payment" vertex="1">
+          <mxGeometry y="26" width="160" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="payment-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="class-payment" vertex="1">
+          <mxGeometry y="120" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="payment-methods" value="+ process()&#xa;+ refund()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="class-payment" vertex="1">
+          <mxGeometry y="128" width="160" height="32" as="geometry" />
+        </mxCell>
+
+        <!-- Notification Class -->
+        <mxCell id="class-notification" value="Notification" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="520" y="440" width="160" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="notification-attr" value="- id: int&#xa;- userId: int&#xa;- message: string&#xa;- type: NotificationType&#xa;- isRead: bool&#xa;- sentAt: DateTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="class-notification" vertex="1">
+          <mxGeometry y="26" width="160" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="notification-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="class-notification" vertex="1">
+          <mxGeometry y="110" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="notification-methods" value="+ send()&#xa;+ markAsRead()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="class-notification" vertex="1">
+          <mxGeometry y="118" width="160" height="22" as="geometry" />
+        </mxCell>
+
+        <!-- Repository Pattern Section -->
+        <mxCell id="section-repository" value="Repository Layer" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="40" y="800" width="840" height="200" as="geometry">
+            <mxRectangle x="40" y="800" width="140" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- BookingRepository Class -->
+        <mxCell id="class-booking-repo" value="BookingRepository" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="60" y="840" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="booking-repo-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="class-booking-repo" vertex="1">
+          <mxGeometry y="26" width="180" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="booking-repo-methods" value="+ save(Booking)&#xa;+ findById(int)&#xa;+ findByCustomerId(int)&#xa;+ findByDate(DateTime)&#xa;+ delete(int)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="class-booking-repo" vertex="1">
+          <mxGeometry y="34" width="180" height="86" as="geometry" />
+        </mxCell>
+
+        <!-- ServiceRepository Class -->
+        <mxCell id="class-service-repo" value="ServiceRepository" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="280" y="840" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="service-repo-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="class-service-repo" vertex="1">
+          <mxGeometry y="26" width="180" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="service-repo-methods" value="+ save(Service)&#xa;+ findById(int)&#xa;+ findByCategory(string)&#xa;+ findAvailable()&#xa;+ delete(int)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="class-service-repo" vertex="1">
+          <mxGeometry y="34" width="180" height="86" as="geometry" />
+        </mxCell>
+
+        <!-- UserRepository Class -->
+        <mxCell id="class-user-repo" value="UserRepository" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="500" y="840" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="user-repo-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="class-user-repo" vertex="1">
+          <mxGeometry y="26" width="180" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="user-repo-methods" value="+ save(User)&#xa;+ findById(int)&#xa;+ findByEmail(string)&#xa;+ authenticate(string, string)&#xa;+ delete(int)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="class-user-repo" vertex="1">
+          <mxGeometry y="34" width="180" height="86" as="geometry" />
+        </mxCell>
+
+        <!-- Relationships -->
+        
+        <!-- User inheritance relationships -->
+        <mxCell id="user-customer-rel" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" parent="1" source="class-customer" target="class-user" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="140" y="280" as="sourcePoint" />
+            <mxPoint x="140" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="user-admin-rel" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" parent="1" source="class-admin" target="class-user" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="340" y="280" as="sourcePoint" />
+            <mxPoint x="200" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Service-TimeSlot relationship -->
+        <mxCell id="service-timeslot-rel" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="timeslot-attr" target="service-attr" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="700" y="130" as="sourcePoint" />
+            <mxPoint x="680" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="service-timeslot-label" value="has" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="service-timeslot-rel" vertex="1" connectable="0">
+          <mxGeometry x="-0.1" y="-1" relative="1" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="service-timeslot-card1" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="service-timeslot-rel" vertex="1" connectable="0">
+          <mxGeometry x="-0.8" relative="1" as="geometry">
+            <mxPoint x="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="service-timeslot-card2" value="*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="service-timeslot-rel" vertex="1" connectable="0">
+          <mxGeometry x="0.8" relative="1" as="geometry">
+            <mxPoint x="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Customer-Booking relationship -->
+        <mxCell id="customer-booking-rel" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="class-customer" target="class-booking" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="140" y="380" as="sourcePoint" />
+            <mxPoint x="150" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="customer-booking-label" value="makes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="customer-booking-rel" vertex="1" connectable="0">
+          <mxGeometry x="-0.1" y="-1" relative="1" as="geometry">
+            <mxPoint x="15" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="customer-booking-card1" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="customer-booking-rel" vertex="1" connectable="0">
+          <mxGeometry x="-0.8" relative="1" as="geometry">
+            <mxPoint x="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="customer-booking-card2" value="*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="customer-booking-rel" vertex="1" connectable="0">
+          <mxGeometry x="0.8" relative="1" as="geometry">
+            <mxPoint x="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Booking-Service relationship -->
+        <mxCell id="booking-service-rel" value="" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="class-booking" target="service-attr" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="260" y="490" as="sourcePoint" />
+            <mxPoint x="480" y="150" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="360" y="490" />
+              <mxPoint x="360" y="360" />
+              <mxPoint x="460" y="360" />
+              <mxPoint x="460" y="159" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="booking-service-label" value="books" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="booking-service-rel" vertex="1" connectable="0">
+          <mxGeometry x="-0.1" y="-1" relative="1" as="geometry">
+            <mxPoint x="30" y="-40" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Booking-Payment relationship -->
+        <mxCell id="booking-payment-rel" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="payment-attr" target="booking-attr" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="290" y="520" as="sourcePoint" />
+            <mxPoint x="250" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="booking-payment-label" value="hasPayment" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="booking-payment-rel" vertex="1" connectable="0">
+          <mxGeometry x="-0.1" y="-1" relative="1" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="booking-payment-card1" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="booking-payment-rel" vertex="1" connectable="0">
+          <mxGeometry x="-0.8" relative="1" as="geometry">
+            <mxPoint x="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="booking-payment-card2" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="booking-payment-rel" vertex="1" connectable="0">
+          <mxGeometry x="0.8" relative="1" as="geometry">
+            <mxPoint x="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- User-Notification relationship -->
+        <mxCell id="user-notification-rel" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="class-user" target="class-notification" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="250" y="215" as="sourcePoint" />
+            <mxPoint x="600" y="430" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="600" y="215" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="user-notification-label" value="receives" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="user-notification-rel" vertex="1" connectable="0">
+          <mxGeometry x="0.3" y="-1" relative="1" as="geometry">
+            <mxPoint x="15" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="user-notification-card1" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="user-notification-rel" vertex="1" connectable="0">
+          <mxGeometry x="-0.9" relative="1" as="geometry">
+            <mxPoint x="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="user-notification-card2" value="*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="user-notification-rel" vertex="1" connectable="0">
+          <mxGeometry x="0.9" relative="1" as="geometry">
+            <mxPoint x="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Repository relationships -->
+        <mxCell id="booking-repo-rel" value="" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="class-booking-repo" target="class-booking" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="150" y="830" as="sourcePoint" />
+            <mxPoint x="150" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="booking-repo-label" value="manages" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="booking-repo-rel" vertex="1" connectable="0">
+          <mxGeometry x="-0.1" y="-1" relative="1" as="geometry">
+            <mxPoint x="20" y="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="service-repo-rel" value="" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="class-service-repo" target="class-service" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="370" y="830" as="sourcePoint" />
+            <mxPoint x="590" y="250" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="370" y="300" />
+              <mxPoint x="590" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="service-repo-label" value="manages" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="service-repo-rel" vertex="1" connectable="0">
+          <mxGeometry x="-0.1" y="-1" relative="1" as="geometry">
+            <mxPoint x="50" y="-150" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="user-repo-rel" value="" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" parent="1" source="class-user-repo" target="class-user" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="590" y="830" as="sourcePoint" />
+            <mxPoint x="240" y="260" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="590" y="700" />
+              <mxPoint x="590" y="280" />
+              <mxPoint x="240" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="user-repo-label" value="manages" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="user-repo-rel" vertex="1" connectable="0">
+          <mxGeometry x="-0.1" y="-1" relative="1" as="geometry">
+            <mxPoint x="150" y="-50" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
