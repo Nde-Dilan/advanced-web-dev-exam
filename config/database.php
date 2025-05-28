@@ -2,8 +2,8 @@
 class Database {
     private $host = 'localhost';
     private $db_name = 'event_booking_system';
-    private $username = 'root';
-    private $password = '';
+    private $username = 'dilan';
+    private $password = 't92x.7a!lJZEtGjB';
     private $conn;
 
     public function getConnection() {
